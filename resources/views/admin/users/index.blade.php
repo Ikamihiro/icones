@@ -36,7 +36,7 @@
             </div>
 
             <div class="col-12">
-                <table class="table table-bordered table-striped table-responsive-sm bg-white">
+                <table class="table table-bordered table-striped table-responsive-sm bg-white my-shadow">
                     <thead>
                         <tr>
                             <th>Nome</th>

@@ -14,6 +14,6 @@ class IconeSeeder extends Seeder
      */
     public function run()
     {
-        Icone::factory()->count(5)->create();
+        Icone::factory()->count(35)->create();
     }
 }
