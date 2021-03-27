@@ -45,17 +45,22 @@ class IconesController extends Controller
 
         try {
             $foto_path = $request->file('foto_path')->hashName();
+            
             Icone::create(array_merge($request->validated(), [
                 'foto_path' => $foto_path,
             ]));
+
             $request->file('foto_path')->store('fotos/');
+            
             DB::commit();
         } catch (\Throwable $th) {
             DB::rollBack();
+            
             throw $th;
         }
 
-        return redirect()->route('icones.index')->with('success', 'Ícone inserido com sucesso!');
+        return back()
+            ->with('success', 'Ícone inserido com sucesso!');
     }
 
     /**
@@ -108,7 +113,8 @@ class IconesController extends Controller
             throw $th;
         }
 
-        return redirect()->route('icones.index')->with('success', 'Ícone atualizado com sucesso!');
+        return back()
+            ->with('success', 'Ícone atualizado com sucesso!');
     }
 
     /**
@@ -133,6 +139,7 @@ class IconesController extends Controller
             throw $th;
         }
 
-        return redirect()->route('icones.index')->with('success', 'Ícone excluído com sucesso!');
+        return back()
+            ->with('success', 'Ícone excluído com sucesso!');
     }
 }

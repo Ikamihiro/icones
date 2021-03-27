@@ -24,10 +24,21 @@ Route::get('/', function () {
 Auth::routes(['register' => false]);
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function() {
-    Route::get('/', [HomeController::class, 'index'])->name('home');
-    
-    Route::get('/user/change', [UsersController::class, 'showChangePasswordForm'])->name('show.changePassword');
-    Route::post('/user/change', [UsersController::class, 'changePassword'])->name('store.changePassword');
+    Route::get('/', [HomeController::class, 'index'])
+        ->name('home');
     
     Route::resource('icones', IconesController::class);
+
+    Route::group(['middleware' => 'isAdmin'], function() {
+        Route::resource('users', UsersController::class);
+
+        Route::get('/user/generate_password/{user}', [UsersController::class, 'generateNewPassword'])
+            ->name('generate.password');
+    });
+
+    Route::get('/user/change', [UsersController::class, 'showChangePasswordForm'])
+        ->name('show.changePassword');
+    
+    Route::post('/user/change', [UsersController::class, 'changePassword'])
+        ->name('store.changePassword');
 });

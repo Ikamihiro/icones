@@ -34,6 +34,11 @@
                                 {{ __('Ícones') }}
                             </a>
                         </li>
+                        <li class="nav-item">
+                            <a href="{{ route('users.index') }}" class="nav-link">
+                                {{ __('Users') }}
+                            </a>
+                        </li>
                     </ul>
 
                     <ul class="navbar-nav ml-auto">
