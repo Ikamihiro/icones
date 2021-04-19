@@ -1,6 +1,5 @@
 @extends('layouts.website')
 @section('content')
-    <div class="container">
-        <h1>website</h1>
-    </div>
+    {{-- Página Home é uma página vazia --}}
+    <div class="turing-image"></div>
 @endsection

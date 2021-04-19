@@ -10,6 +10,30 @@
   font-family: 'Fira Code', monospace;
 }
 
+body {
+  background: #cccccc;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+#sidebarCollapse {
+  display: none;
+}
+
+.turing-image {
+  background: url("http://localhost:8000/img/turing.svg");
+  background-repeat: repeat-y;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+}
+
+@media (max-width: 948px) {
+  #sidebarCollapse {
+    display: block;
+  }
+}
+
 .vertical-nav {
   min-width: 17rem;
   width: 17rem;
@@ -38,7 +62,7 @@
   margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 948px) {
   #sidebar {
     margin-left: -17rem;
   }
@@ -53,35 +77,4 @@
     margin-left: 17rem;
     width: calc(100% - 17rem);
   }
-}
-
-/*
-*
-* ==========================================
-* FOR DEMO PURPOSE
-* ==========================================
-*
-*/
-
-body {
-  background: #cccccc;
-  background-image: url("http://localhost:8000/img/turing.svg");
-  background-repeat: repeat-y;
-  background-position: center;
-  /* background-size: cover; */
-  min-height: 100vh;
-  overflow-x: hidden;
-}
-
-.separator {
-  margin: 3rem 0;
-  border-bottom: 1px dashed #fff;
-}
-
-.text-uppercase {
-  letter-spacing: 0.1em;
-}
-
-.text-gray {
-  color: #aaa;
 }
