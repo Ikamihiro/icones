@@ -10005,11 +10005,3 @@ h3 {
 .my-shadow {
   box-shadow: 0px 0px 42px -16px #7a7a7a !important;
 }
-
-.card {
-  border: none;
-}
-.card-title {
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}

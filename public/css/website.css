@@ -10002,3 +10002,15 @@ h3 {
     border-color: #dee2e6;
   }
 }
+.card {
+  background-color: rgba(52, 58, 64, 0.85);
+  border: none;
+}
+.card-title {
+  color: white;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.card-text {
+  color: white;
+}

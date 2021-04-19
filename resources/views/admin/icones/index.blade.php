@@ -21,7 +21,7 @@
             </div>
             <div class="col-12">
                 @if ($icones)
-                    <table class="table table-bordered table-striped table-responsive-sm bg-white my-shadow">
+                    <table class="table table-bordered table-striped table-responsive-sm bg-white">
                         <thead>
                             <tr>
                                 <th>Nome</th>

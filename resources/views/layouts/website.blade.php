@@ -25,7 +25,7 @@
                 </a>
             </li>
             <li class="nav-item text-center">
-                <a href="{{ route('root') }}" class="nav-link text-white">
+                <a href="{{ route('about') }}" class="nav-link text-white">
                     <h5>Sobre</h5>
                 </a>
             </li>

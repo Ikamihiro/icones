@@ -1,0 +1,14 @@
+.card {
+    background-color: rgba(52, 58, 64, 0.85);
+    border: none;
+
+    &-title {
+        color: white;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &-text {
+        color: white;
+    }
+}

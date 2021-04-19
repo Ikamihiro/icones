@@ -10,8 +10,8 @@
         </div>
         <div class="row justify-content-center">
             <div class="col-12">
-                <div class="card my-shadow">
-                    <div class="card-header bg-secondary text-light">
+                <div class="card">
+                    <div class="card-header">
                         <div class="card-title">
                             Editar Ícone
                         </div>

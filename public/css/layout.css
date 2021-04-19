@@ -78,3 +78,7 @@ body {
     width: calc(100% - 17rem);
   }
 }
+
+.bg-dark {
+  background-color: rgba(52, 58, 64, 0.85) !important;
+}
