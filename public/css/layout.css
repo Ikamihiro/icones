@@ -22,9 +22,9 @@ body {
 
 .turing-image {
   background: url("http://localhost:8000/img/turing.svg");
-  background-repeat: repeat-y;
-  background-position: center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  /* background-size: cover; */
   min-height: 100vh;
 }
 

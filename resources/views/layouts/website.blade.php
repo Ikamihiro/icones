@@ -30,18 +30,13 @@
                 </a>
             </li>
             <li class="nav-item text-center">
-                <a href="{{ route('root') }}" class="nav-link text-white">
+                <a href="{{ route('website.icones.index') }}" class="nav-link text-white">
                     <h5>Ícones</h5>
                 </a>
             </li>
             <li class="nav-item text-center">
                 <a href="{{ route('root') }}" class="nav-link text-white">
                     <h5>Contribuir</h5>
-                </a>
-            </li>
-            <li class="nav-item text-center">
-                <a href="{{ route('root') }}" class="nav-link text-white">
-                    <h5>Políticas e Termos</h5>
                 </a>
             </li>
         </ul>
