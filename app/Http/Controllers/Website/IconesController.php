@@ -14,4 +14,9 @@ class IconesController extends Controller
 
         return view('website.icones.index', compact('icones'));
     }
+
+    public function show(Icone $icone)
+    {
+        return view('website.icones.show', compact('icone'));
+    }
 }

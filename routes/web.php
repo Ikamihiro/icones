@@ -31,6 +31,9 @@ Route::get('/about', [CommonController::class, 'about'])
 Route::group(['prefix' => 'icones'], function() {
     Route::get('/', [WebsiteIconesController::class, 'index'])
         ->name('website.icones.index');
+    
+    Route::get('/{icone}', [WebsiteIconesController::class, 'show'])
+        ->name('website.icones.show');
 });
 
 Route::group(['prefix' => 'admin', 'middleware' => 'auth'], function () {
